@@ -1,0 +1,24 @@
+[package]
+name = "rustLambda"
+version = "0.1.0"
+edition = "2021"
+autobins = false
+
+[[bin]]
+name = "bootstrap"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "0.54.1"
+aws-sdk-s3 = "0.24.0"
+aws_lambda_events = "0.7.3"
+flate2 = "1.0.25"
+lambda_runtime = "0.7.3"
+log = "0.4.17"
+serde = "1.0.152"
+serde_json = "1.0.93"
+tokio = {version = "1.25.0", features = ["full"]}
+tracing-subscriber = "0.3.16"
+
